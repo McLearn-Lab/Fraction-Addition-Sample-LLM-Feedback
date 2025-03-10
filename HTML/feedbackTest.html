@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.ctat.cs.cmu.edu/releases/lab/CTAT.css">
+        <link rel="stylesheet" href="https://cdn.ctat.cs.cmu.edu/releases/lab/html-editor-default.css">
+        <link rel="stylesheet" href="./Assets/CTAT/fractionAdditionCTATwithStoryNLP-styles.css">
+        <link rel="stylesheet" href="https://cdn.ctat.cs.cmu.edu/releases/lab/guppy/guppy-default-osk.min.css">
+        <script src="https://cdn.ctat.cs.cmu.edu/releases/lab/guppy/guppy.min.js"></script>
+        <script src="https://cdn.ctat.cs.cmu.edu/releases/lab/guppy/guppy_osk.js"></script>
+        <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/nools.js"></script>
+        <script type="text/javascript" src="Assets/CTAT/ctat.min.js"></script>
+        <script type="text/javascript" src="https://cdn.ctat.cs.cmu.edu/releases/lab/ctatloader.js"></script>
+
+        <script src="Assets/debug.js"></script>
+        <script src="Assets/buggyMsg.js"></script>
+        <script src="Assets/hints.js"></script>
+        <script src="Assets/success.js"></script>
+        <script src ="Assets/main.js"></script>
+      </head>
+      <body>
+        <div id="ivv2h" class="flexcolumn">
+   <section id="i0mmt" class="flexrow">
+      <div id="problemStatement" class="CTATTextField">
+         Fraction Problem with LLM generated hints                 
+      </div>
+</section>
+<section class="flexrow" id="isanr">
+   <div id="buggyActionNLP" class="CTATNLPInput" 
+      style="display: none;"
+      data-ctat-nlp-url="https://api.openai.com/v1/chat/completions" 
+      data-ctat-nlp-method="POST" 
+      data-ctat-preprocess="prepareNLPBuggyMsg"
+      data-ctat-nlp-headers="{&quot;Content-Type&quot;: &quot;application/json&quot;, &quot;Authorization&quot;: &quot;Bearer OPENAI_KEY_HERE&quot;}">
+   </div>
+   <div id="hintActionNLP" class="CTATNLPInput" 
+      style="display: none;"
+      data-ctat-nlp-url="https://api.openai.com/v1/chat/completions" 
+      data-ctat-nlp-method="POST" 
+      data-ctat-preprocess="prepareNLPHint"
+      data-ctat-nlp-headers="{&quot;Content-Type&quot;: &quot;application/json&quot;, &quot;Authorization&quot;: &quot;Bearer OPENAI_KEY_HERE&quot;}">
+   </div>
+   <div id="correctActionNLP" class="CTATNLPInput" 
+      style="display: none;"
+      data-ctat-nlp-url="https://api.openai.com/v1/chat/completions" 
+      data-ctat-nlp-method="POST" 
+      data-ctat-preprocess="prepareNLPSuccess"
+      data-ctat-nlp-headers="{&quot;Content-Type&quot;: &quot;application/json&quot;, &quot;Authorization&quot;: &quot;Bearer OPENAI_KEY_HERE&quot;}">
+   </div>
+</section>
+<section id="i28g5" class="flexrow">
+   <div id="iztgn" class="flexcolumn">
+      <div id="it4l7" class="CTATTextField">
+         Given Fractions<br>
+      </div>
+</div>
+   <div id="i9x7a" class="flexcolumn">
+      <div id="i0fjy" class="CTATTextField">
+         Converted Fractions<br>
+      </div>
+</div>
+</section>
+<section id="ii678" class="flexrow">
+   <div id="iykul" class="flexcolumn">
+      <div id="ihhrw" class="flexbox">
+         <div id="firstNumGiven" class="CTATTextInput"></div>
+   <hr id="isr8p">
+   <div id="firstDenGiven" class="CTATTextInput"></div>
+</div>
+</div>
+   <div id="is1i6" class="flexbox">
+      <div id="imubk" class="CTATTextField">
+         =                  
+      </div>
+</div>
+   <div id="ik57q" class="flexcolumn">
+      <div id="in03u" class="flexbox">
+         <div id="firstNumConv" class="CTATTextInput"></div>
+   <hr id="i1dz8">
+   <div id="firstDenConv" class="CTATTextInput"></div>
+</div>
+</div>
+</section>
+<section id="iunfu" class="flexrow">
+   <div id="ijqfi" class="flexbox">
+      <div id="mainplus" class="CTATTextField">
+         +<br>
+      </div>
+</div>
+   <div id="i290n" class="flexcolumn">
+      <div id="ipn4u" class="flexbox">
+         <div id="secNumGiven" class="CTATTextInput"></div>
+   <hr id="iwb34">
+   <div id="secDenGiven" class="CTATTextInput"></div>
+</div>
+</div>
+   <div id="iua0y" class="flexbox">
+      <div id="irtty" class="CTATTextField">
+         =                  
+      </div>
+</div>
+   <div id="iuvfa" class="flexcolumn">
+      <div id="ivt3j" class="flexbox">
+         <div id="secNumConv" class="CTATTextInput"></div>
+   <hr id="iajqd">
+   <div id="secDenConv" class="CTATTextInput"></div>
+</div>
+</div>
+</section>
+<hr id="inw11">
+<section id="iguzt" class="flexrow">
+   <div id="i4faw" class="flexbox">
+      <div id="iyun3" class="CTATTextField">
+         =                  
+      </div>
+</div>
+   <div id="iag19" class="flexcolumn">
+      <div id="if41v" class="flexbox">
+         <div id="ansNum1" class="CTATTextInput"></div>
+   <hr id="i70ri">
+   <div id="ansDen1" class="CTATTextInput"></div>
+</div>
+</div>
+   <div id="inl8n" class="flexbox">
+      <div id="im9jf" class="CTATTextField">
+         =                  
+      </div>
+</div>
+   <div id="iui9m" class="flexcolumn">
+      <div id="ichfq" class="flexbox">
+         <div id="ansNumFinal1" class="CTATTextInput"></div>
+   <hr id="iuvnw">
+   <div id="ansDenFinal1" class="CTATTextInput"></div>
+</div>
+</div>
+</section>
+</div>
+<section id="i1epj" class="HintWidgetRow">
+   <div id="iyvo5" class="HintWidgetButtons">
+      <div id="it6yj" class="CTATHintButton"></div>
+   <div id="done" class="CTATDoneButton"></div>
+</div>
+   <div id="iwqxu" class="CTATHintWindow"></div>
+   <div id="iezhe" class="CTATSkillWindow"></div>
+</section>
+      </body>
+    </html>
+  

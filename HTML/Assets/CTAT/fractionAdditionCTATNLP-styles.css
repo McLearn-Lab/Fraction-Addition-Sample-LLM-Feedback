@@ -1,0 +1,394 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.CTATTextInput {
+    height: 50px;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#ijqfi {
+    flex-direction: column;
+    flex-grow: 1;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+#mainplus {
+    width: auto;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 30px;
+    height: auto;
+    line-height: 26px;
+}
+
+#ansNum1 {
+    margin: 0 0 0 0;
+}
+
+#i70ri {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#ansDen1 {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+}
+
+#if41v {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#iag19 {
+    flex-grow: 5;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#iyun3 {
+    width: auto;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#i4faw {
+    flex-flow: column nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+#ansNumFinal1 {
+    margin: 0 0 0 0;
+}
+
+#iuvnw {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#ansDenFinal1 {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+}
+
+#ichfq {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#iui9m {
+    flex-grow: 2;
+    flex-basis: 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#iguzt {
+    height: auto;
+    padding: 10px 0 10px 0;
+}
+
+#firstNumGiven {
+    margin: 0 0 0 0;
+}
+
+#isr8p {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#firstDenGiven {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+}
+
+#ihhrw {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 67%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#iykul {
+    flex-grow: 3;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#imubk {
+    width: auto;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#is1i6 {
+    flex-flow: column nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+#firstNumConv {
+    margin: 0 0 0 0;
+}
+
+#i1dz8 {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#firstDenConv {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#in03u {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#ik57q {
+    flex-grow: 5;
+    flex-basis: 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#ii678 {
+    height: auto;
+    padding: 10px 0 10px 0;
+}
+
+#im9jf {
+    width: auto;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#inl8n {
+    flex-flow: column nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+#secNumGiven {
+    margin: 0 0 0 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#iwb34 {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#secDenGiven {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+}
+
+#ipn4u {
+    flex-direction: column;
+    flex-grow: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#i290n {
+    flex-grow: 2;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#irtty {
+    width: auto;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#iua0y {
+    flex-flow: column nowrap;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 0;
+}
+
+#secNumConv {
+    margin: 0 0 0 0;
+}
+
+#iajqd {
+    width: 60px;
+    margin: 10px 0 10px;
+}
+
+#secDenConv {
+    margin: 0 0 0 0;
+    flex-flow: column nowrap;
+}
+
+#ivt3j {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 40%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#iuvfa {
+    flex-grow: 5;
+    flex-basis: 0;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#iunfu {
+    height: auto;
+    padding: 10px 0 10px 0;
+}
+
+#problemStatement {
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0 0 0 0;
+    text-align: center;
+    height: auto;
+    flex-grow: 1;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#i0mmt {
+    padding: 10px 0 10px 0;
+}
+
+#it4l7 {
+    width: 67%;
+    font-family: Verdana, Geneva, sans-serif;
+    height: auto;
+    text-align: center;
+}
+
+#iztgn {
+    flex-grow: 3;
+    flex-basis: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#i0fjy {
+    width: 40%;
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 0 0 0 0;
+    text-align: center;
+    height: auto;
+}
+
+#i9x7a {
+    flex-grow: 5;
+    flex-basis: 0;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 0 0 11%;
+    width: auto;
+}
+
+#i28g5 {
+    height: auto;
+    align-items: center;
+}
+
+#i1epj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+#iyvo5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 10px;
+    max-width: 68px;
+    margin: 0 2px 0 0;
+}
+
+#iwqxu {
+    margin-right: 10px;
+    margin: 2px 2px 2px 2px;
+}
+
+#done {
+    margin: 2px 0 0 0;
+}
+
+#it6yj {
+    margin: 0 0 2px 0;
+}
+
+#ivv2h {
+    height: auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
+}
+
+#isanr {
+    align-content: center;
+    align-items: center;
+}
+
+#unitEntry {
+    font-size: 15px;
+}

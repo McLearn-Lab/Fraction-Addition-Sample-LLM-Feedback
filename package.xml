@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package label="Fraction Addition Sample LLM Feedback" description="Testing out generative LLM feedback for hints, errors and successes" save_state="true">
+  <Problems>
+    <Problem name="feedback Test" label="feedback Test" tutor_flag="tutor" model_file="main.brd" student_interface="feedbackTest.html">
+    </Problem>
+  </Problems>
+  <ProblemSets>
+    <ProblemSet name="feedback Test" label="feedback Test" status="active" image_height="0" filler_height="0" team_size="1" selection_algorithm="sequential" max_count="1000" max_repeat="1" initial_sequence="0">
+      <Problems>
+        <Problem name="feedback Test" position="1" role="0"/>
+      </Problems>
+    </ProblemSet>
+  </ProblemSets>
+  <Assets>
+    <Asset name="buggyMsg.js" path="Assets"/>
+    <Asset name="hints.js" path="Assets"/>
+    <Asset name="main.js" path="Assets"/>
+    <Asset name="success.js" path="Assets"/>
+    <Asset name="main.brd" path="FinalBRDs"/>
+    <Asset name="feedbackTest.html" path="HTML"/>
+    <Asset name="ctat.min.js" path="HTML/Assets/CTAT"/>
+    <Asset name="ctat.min.js.map" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTAT-styles.css" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATdynamic-styles.css" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATNLP-styles.css" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATNLP-styles.css~" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATNLPpreprocess-styles.css" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATwithStory-styles.css" path="HTML/Assets/CTAT"/>
+    <Asset name="fractionAdditionCTATwithStoryNLP-styles.css" path="HTML/Assets/CTAT"/>
+  </Assets>
+</Package>
